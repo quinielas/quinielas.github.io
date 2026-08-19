@@ -306,10 +306,10 @@
                 var total = document.getElementById('totalPrice').innerText;
                 var numeroTelefono = document.getElementById('numeroTelefono').innerText;
 
-                //if (total < 20) {
-                  //  alert('El precio minimo total debe ser de $20.00 pesos.');
-                    //return;
-                //}
+                if (total < 20) {
+                    alert('Minimo de 2 Quinielas para que sean $20 pesos. o 1 Quiniela con 1 Dobl para que sean $20.00 pesos');
+                    return;
+                }
 
                 sellRequest.resultados = [];
 
